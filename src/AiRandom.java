@@ -5,7 +5,9 @@ import structs.Key;
 import commandcenter.CommandCenter;
 
 /**
- * @author @ogamita777 完全にランダムの入力を行うAI
+ * 完全にランダムの入力を行うAI
+ * 
+ * @author @ogamita777
  */
 public class AiRandom implements Ai {
 

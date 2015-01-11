@@ -5,12 +5,14 @@ import java.util.Random;
 import structs.FrameData;
 import structs.GameData;
 import structs.Key;
+
 import commandcenter.CommandCenter;
 
 /**
- * @author @ogamita777
  * Strategyパターンを使って実装したAI <br>
  * 完全にランダムの入力を行う
+ * 
+ * @author @ogamita777
  */
 public class StrategyRandomAi implements AIInterface {
 
@@ -67,6 +69,7 @@ public class StrategyRandomAi implements AIInterface {
   }
 
   public boolean canProcessing() {
-    return !frameData.getEmptyFlag() && frameData.getRemainingTime() > 0;
+    System.out.println(frameData.getRemainingTime());
+    return !frameData.emptyFlag && frameData.getRemainingTime() > 0;
   }
 }
